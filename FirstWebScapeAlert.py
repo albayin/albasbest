@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Set up an alert when job opening changes at delta.com
+Set up an alert when job opening changes at delta.com.
+I have removed all the actual URLs since I don't know if its ok to put everything out there
 Depending on the website, it may require different post parameter
 and values. Mine requires a job id and usersession id
 TODO: Add alert when the value changes and send email to me
@@ -30,7 +31,7 @@ while True:
     
     # You don't need a dictionary for it if it's just one thing. But I like it its more organized and reaable. 
     job_to_browse = {
-            "job":"A08DA",
+            "job":<actual value>,
             "PSUID":""
             } 
     
@@ -50,7 +51,7 @@ while True:
     print (job_to_browse)
     
     # The actual URL I will scrape for certain value change
-    job_url = 'https://delta.greatjob.net/jobs/JobListingAction.action?reqId=0&job=A08DA&jobUUID=A08DA_0_en_US&%s'% psuid    
+    job_url = '<actual url>'% psuid    
     print (job_url)
     
     job_response = s.get(job_url, headers=headers, timeout=5)

@@ -8,11 +8,5 @@ def digit_sum_str (x):
     result = int(x)
   return result
 
-# Use Modulo
-def digit_sum_mod (x):
-  result = 0
-  if x >= 10:
-    result += x%10
-  else:
-    result = x
-  return result
+# Use Modulo and Floor division
+

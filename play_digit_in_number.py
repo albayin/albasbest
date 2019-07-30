@@ -28,3 +28,23 @@ def digit_sum (x):
 
 #test result
 print digit_sum (89) 
+
+# Break down to factorial of a given digit
+def factorial (x):
+  if x == 1:
+    result = x
+  elif x > 1:
+    result = x
+    i = result
+    while i >= 1:
+      i -= 1
+      if i < 1: 
+        break
+      else:
+        result *= i
+  else:
+    print "No factorial for %d"%x
+    result = 0
+  return result
+
+print factorial (0)

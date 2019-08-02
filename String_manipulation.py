@@ -30,3 +30,17 @@ def anti_vowel(text):
     else:
       print "no vowel found"
   return result
+
+# Find string and replace them with *
+def censor(text, word):
+  result = text
+  temp = word
+  while result.find(word) != -1:
+    for c in word:
+      temp = temp.replace(c, "*")
+    result = result.replace(word, temp)
+  else:
+    print "no word found to be censored."
+  
+  print result
+  return result
